@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  padding: 0.5em;
+}
+
+/* INPUT STYLING */
+#input-el {
+  border: none;
+  border: 1px solid rgb(76, 175, 80);
+  border-radius: 3.5px;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  padding: 0.7em;
+
+  min-width: 400px;
+  /* max-width: 100%; */
+  transition: 300ms;
+}
+#input-el:focus {
+  outline: none;
+  box-shadow: 3px 3px 5px rgb(206, 206, 206);
+  /* border: 2px solid rgb(76, 175, 80); */
+}
+
+/* BUTTON STYLE */
+button {
+  display: block;
+  margin: 1em 0;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 3.5px;
+  color: #333333;
+  background-color: #34d399;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-size: 0.9em;
+
+  letter-spacing: 1px;
+}
+button:hover {
+  background-color: #10b981;
+  box-shadow: 2px 2px 5px rgb(206, 206, 206);
+}
+
+/* ERRO MSG */
+#errorMsg {
+  background-color: rgb(255, 93, 93);
+  color: #ffffff;
+
+  padding: 0.4em;
+  margin-top: 0.2em;
+  border-radius: 2px;
+  width: 200px;
+}
+
+/* LIST ITEMS STYLE */
+#ul-el {
+  list-style: none;
+  padding-left: 0;
+}
+.list-item {
+  margin: 0.3em 0.2em;
+}
+.underline {
+  text-decoration: none;
+  color: #10b981;
+  position: relative;
+  padding-bottom: 3px;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #34d399;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
