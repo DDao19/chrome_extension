@@ -13,6 +13,7 @@ buttonEl.addEventListener("click", function (event) {
     error.removeAttribute("id");
     error.textContent = "";
 
+    // let location = window.location.href
     let leads = inputEl.value;
     myLeads.push(leads);
     inputEl.value = ""; // clear input text field
