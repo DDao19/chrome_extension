@@ -8,6 +8,11 @@ body {
   padding: 0.5em;
 }
 
+.title {
+  color: #333333;
+  margin: 0.2em 0;
+}
+
 /* INPUT STYLING */
 #input-el {
   border: none;
@@ -29,10 +34,11 @@ body {
 
 /* BUTTON STYLE */
 button {
-  display: block;
-  margin: 1em 0;
-  padding: 0.6em 1.2em;
-  border: none;
+  /* display: block; */
+  margin: 0.5em 0.1em;
+  padding: 0.7em 0.5em;
+  width: 8em;
+  border: 1px solid #34d399;
   border-radius: 3.5px;
   color: #333333;
   background-color: #34d399;
@@ -47,25 +53,32 @@ button:hover {
   background-color: #10b981;
   box-shadow: 2px 2px 5px rgb(206, 206, 206);
 }
+#delete-btn {
+  border: 1px solid #34d399;
+  background-color: #ffffff;
+  color: #34d399;
+}
 
 /* ERRO MSG */
 #errorMsg {
+  display: block;
   background-color: rgb(255, 93, 93);
   color: #ffffff;
 
   padding: 0.4em;
   margin-top: 0.2em;
   border-radius: 2px;
-  width: 200px;
+  width: 20%;
 }
 
-/* LIST ITEMS STYLE */
+/* LIST ITEMS STYLE "UNDERLINE"*/
 #ul-el {
+  margin: 1em 0;
   list-style: none;
   padding-left: 0;
 }
 .list-item {
-  margin: 0.3em 0.2em;
+  margin: 0.5em 0.2em;
 }
 .underline {
   text-decoration: none;

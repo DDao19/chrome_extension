@@ -15,9 +15,14 @@
   </head>
   <body>
     <div class="container">
-      <input type="text" id="input-el" />
-      <p class="error"></p>
-      <button id="input-btn">SAVE INPUT</button>
+      <p class="title">Paste URL link below</p>
+      <input type="text" id="input-el" pattern="[^\s]+" />
+      <span class="error"></span>
+      <div>
+        <button id="input-btn">SAVE LEAD</button>
+        <button id="tab-btn">SAVE TAB</button>
+        <button id="delete-btn">DELETE ALL</button>
+      </div>
       <ul id="ul-el"></ul>
       <!-- <p id="errorMsg"></p> -->
     </div>
